@@ -1,0 +1,19 @@
+{
+    "include": [
+        "**/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ],
+    "compilerOptions": {
+        "target": "es5",
+        "module": "none",
+        "outFile": "build.js",
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "lib": [
+            "dom",
+            "es5"
+        ]
+    }
+}

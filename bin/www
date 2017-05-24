@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+const path = require('path');
+const express = require('express');
+const app = express();
+const debug = require('express-debug');
+
+app.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname, '../public/index.html'));
+});
+
+app.use('/', express.static(path.join(__dirname, '../')));
+
+debug(app);
+
+app.listen(5000);
