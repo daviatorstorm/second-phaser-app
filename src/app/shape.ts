@@ -8,8 +8,7 @@ namespace ShapeCreator.Models {
 
             let graphics = game.add.graphics(x, y);
 
-            let color = Shape.generateColor();
-            graphics.beginFill(color);
+            graphics.beginFill(Phaser.Color.getRandomColor());
             graphics.drawPolygon(poly.points);
             graphics.endFill();
         }
@@ -17,16 +16,12 @@ namespace ShapeCreator.Models {
         static createEllipse(game: Phaser.Game, x: number, y: number) {
             let graphics = game.add.graphics(x, y)
 
-            graphics.beginFill(Shape.generateColor());
+            graphics.beginFill(Phaser.Color.getRandomColor());
             graphics.endFill();
 
-            graphics.lineStyle(8, 0xdd90a1);
+            graphics.lineStyle(1, 0xdd90a1);
 
             graphics.drawEllipse(0, 0, 100, 50);
-        }
-
-        private static generateColor(): number {
-            return Math.floor(Math.floor(Math.random() * (0xffffaa - 0x000000 + 1)));
         }
     }
 
