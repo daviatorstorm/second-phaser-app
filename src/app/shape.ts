@@ -17,6 +17,9 @@ namespace ShapeCreator.Models {
             let graphics = game.add.graphics(x, y)
 
             graphics.beginFill(Phaser.Color.getRandomColor());
+
+            graphics.arc(x, x, 50, game.math.degToRad(0), game.math.degToRad(360), false);
+
             graphics.endFill();
 
             graphics.lineStyle(1, 0xdd90a1);

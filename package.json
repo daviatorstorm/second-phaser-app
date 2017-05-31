@@ -4,7 +4,10 @@
   "description": "",
   "main": "bin/www",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install": "npm i & tsc .",
+    "run": "node node bin/www",
+    "start": "node ",
+    "dev": "node bin/www & tsc -w"
   },
   "author": "",
   "license": "ISC",

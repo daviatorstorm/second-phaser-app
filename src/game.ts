@@ -4,7 +4,6 @@ namespace ShapeCreator {
         game: Phaser.Game;
 
         constructor() {
-            // this.game = new Phaser.Game(800, 600, Phaser.AUTO, 'game')
             this.game = new Phaser.Game({
                 height: 600,
                 width: 800,

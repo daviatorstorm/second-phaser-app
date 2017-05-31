@@ -8,7 +8,7 @@
     "compilerOptions": {
         "target": "es5",
         "module": "none",
-        "outFile": "build.js",
+        "outFile": "public/build.js",
         "sourceMap": true,
         "moduleResolution": "node",
         "lib": [
